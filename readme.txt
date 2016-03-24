@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: jeroenooms
 Donate link: https://www.paypal.me/JeroenOoms
-Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress
+Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress, flickr, vine, oembed
 Requires at least: 4.0.0
 Tested up to: 4.4.2
 Stable tag: 1.0.0
