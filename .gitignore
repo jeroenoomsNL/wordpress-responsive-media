@@ -1,0 +1,9 @@
+# IntelliJ / Webstorm
+
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+atlassian-ide-plugin.xml
+

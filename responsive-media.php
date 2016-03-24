@@ -34,7 +34,10 @@ class ResponsiveMedia {
             '#https?://(www\.)?kickstarter\.com/projects/.*#i',
             '#https?://kck\.st/.*#i',
             '#https?://videopress.com/v/.*#',
-            '#https?://(www\.)?speakerdeck\.com/.*#i'
+            '#https?://(www\.)?speakerdeck\.com/.*#i',
+            '#https?://vine.co/v/.*#i',
+            '#https?://(www\.)?flickr\.com/.*#i',
+            '#https?://flic\.kr/.*#i'
         );
 
 		add_filter('wp_head', array($this, 'add_responsive_style') );
@@ -64,8 +67,8 @@ class ResponsiveMedia {
                     $inline_css = ' style="padding-bottom: '. ($attr['height'] / $attr['width']) * 100 .'%"';
                 }
 
-                $html = '<p class="responsive-media"'.$inline_css.'>'.$html.'</p>';
-		        return $html;
+                $responsivemedia = '<p class="responsive-media"'.$inline_css.'>'.$html.'</p>';
+		        return $responsivemedia;
             }
         }
 
@@ -83,12 +86,13 @@ class ResponsiveMedia {
                 padding-bottom: 56.25%;
                 height: 0;
             }
-            .responsive-media iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            .responsive-media iframe,
+            .responsive-media > a > img {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
             }
             </style>";
 	}
