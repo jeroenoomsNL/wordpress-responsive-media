@@ -1,14 +1,14 @@
 === Plugin Name ===
 Contributors: jeroenooms
 Donate link: https://www.paypal.me/JeroenOoms
-Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress, flickr, vine, oembed
+Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress, flickr, vine, oembed, image, photo
 Requires at least: 4.0.0
 Tested up to: 4.4.2
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Wordpress plugin for responsive embedded media (oEmbed) like Youtube, Vimeo, Soundcloud & Slideshare.
+Wordpress plugin for responsive embedded media (oEmbed) like Youtube, Vimeo, Flickr, Kickstarter, Slideshare, Soundcloud, Speakerdeck, Ted, Vine.
 
 == Description ==
 
