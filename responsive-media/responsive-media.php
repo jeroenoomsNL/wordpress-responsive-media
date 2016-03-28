@@ -3,7 +3,7 @@
 Plugin Name: Responsive Media
 Plugin URI:  https://github.com/jeroenoomsNL/wordpress-responsive-media
 Description: Make auto embedded media responsive
-Version:     1.1.0
+Version:     1.2.0
 Author:      Jeroen Ooms
 Author URI:  http://jeroenooms.nl
 Text Domain: responsive-media
@@ -44,13 +44,15 @@ class ResponsiveMedia {
 
         load_plugin_textdomain('responsive-media', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
-		add_filter('wp_head', array($this, 'add_responsive_style') );
-		add_filter('embed_oembed_html', array($this, 'add_reponsive_container'), 10, 3);
-
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
         add_action( 'admin_init', array( $this, 'page_init' ) );
 
         add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array( $this, 'plugin_settings_link' ) );
+
+        if( !is_admin() ) {
+		    add_filter('wp_head', array($this, 'add_responsive_style') );
+		    add_filter('embed_oembed_html', array($this, 'add_reponsive_container'), 10, 3);
+		}
 
         if( !get_option( 'responsive_media_option' ) ) {
             add_option( 'responsive_media_option', $this->default_options );

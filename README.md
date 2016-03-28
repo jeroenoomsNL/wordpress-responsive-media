@@ -42,6 +42,10 @@ Responsive support without plugin:
 
 ## Changelog
 
+### 1.2.0
+* Add Dutch translation
+* Fix visual view bug (responsive filter will be disabled in admin panel)
+
 ### 1.1.0
 * Add settings to activate or disable specific media
 * Update documentation

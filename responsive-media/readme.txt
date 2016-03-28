@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/JeroenOoms
 Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress, flickr, vine, oembed, image, photo
 Requires at least: 4.0.0
 Tested up to: 4.4.2
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,10 @@ Responsive support without plugin:
 
 
 == Changelog ==
+
+= 1.2.0 =
+* Add Dutch translation
+* Fix visual view bug (responsive filter will be disabled in admin panel)
 
 = 1.1.0 =
 * Add settings to activate or disable specific media
