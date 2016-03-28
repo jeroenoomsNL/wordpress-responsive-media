@@ -3,9 +3,11 @@
 Plugin Name: Responsive Media
 Plugin URI:  https://github.com/jeroenoomsNL/wordpress-responsive-media
 Description: Make auto embedded media responsive
-Version:     1.1.0
+Version:     1.2.0
 Author:      Jeroen Ooms
 Author URI:  http://jeroenooms.nl
+Text Domain: responsive-media
+Domain Path: /languages/
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -40,11 +42,17 @@ class ResponsiveMedia {
             $this->default_options[$slug] = 'on';
         }
 
-		add_filter('wp_head', array($this, 'add_responsive_style') );
-		add_filter('embed_oembed_html', array($this, 'add_reponsive_container'), 10, 3);
+        load_plugin_textdomain('responsive-media', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
         add_action( 'admin_init', array( $this, 'page_init' ) );
+
+        add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array( $this, 'plugin_settings_link' ) );
+
+        if( !is_admin() ) {
+		    add_filter('wp_head', array($this, 'add_responsive_style') );
+		    add_filter('embed_oembed_html', array($this, 'add_reponsive_container'), 10, 3);
+		}
 
         if( !get_option( 'responsive_media_option' ) ) {
             add_option( 'responsive_media_option', $this->default_options );
@@ -101,7 +109,7 @@ class ResponsiveMedia {
             'Responsive Media',
             'Responsive Media',
             'manage_options',
-            'options_page_slug',
+            'responsive_media_options',
             array(
                 $this,
                 'settings_page'
@@ -163,6 +171,17 @@ class ResponsiveMedia {
 
 
     /**
+     * Add settings link for plugin overview page
+     */
+    function plugin_settings_link($links) {
+        $url = get_admin_url() . 'options-general.php?page=responsive_media_options';
+        $settings_link = '<a href="'.$url.'">' . __( 'Settings', 'responsive-media' ) . '</a>';
+        array_unshift( $links, $settings_link );
+        return $links;
+    }
+
+
+    /**
      * Get the settings option array and print one of its values
      */
     public function option_callback($args) {
@@ -195,7 +214,7 @@ class ResponsiveMedia {
      * Print the Section text
      */
     public function print_section_info() {
-        print 'Select the media that should be responsive:';
+        esc_html_e( 'Select the media that should be responsive:', 'responsive-media' );
     }
 
 
