@@ -18,7 +18,7 @@ After installing this plugin, the following media will be responsive automaticly
 * Slideshare (3.5.0)
 * Soundcloud (3.5.0)
 * Speakerdeck (4.4.0)
-* TED (4.0.0)
+* TED Talks (4.0.0)
 * Videopress (4.4.0)
 * Vimeo (2.9.0)
 * Vine (4.1.0)

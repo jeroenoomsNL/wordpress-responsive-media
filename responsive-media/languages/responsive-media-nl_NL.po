@@ -1,0 +1,44 @@
+# Copyright (C) 2016 Responsive Media
+# This file is distributed under the same license as the Responsive Media package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Responsive Media 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/responsive-media\n"
+"POT-Creation-Date: 2016-03-28 14:55+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-03-28 15:02+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: responsive-media.php:176
+msgid "Settings"
+msgstr "Instellingen"
+
+#: responsive-media.php:215
+msgid "Select the media that should be responsive:"
+msgstr "Selecteer de media die responsive moeten zijn:"
+
+#. Plugin Name of the plugin/theme
+msgid "Responsive Media"
+msgstr "Responsive Media"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/jeroenoomsNL/wordpress-responsive-media"
+msgstr "https://github.com/jeroenoomsNL/wordpress-responsive-media"
+
+#. Description of the plugin/theme
+msgid "Make auto embedded media responsive"
+msgstr "Maakt automatisch embedded media responsive"
+
+#. Author of the plugin/theme
+msgid "Jeroen Ooms"
+msgstr "Jeroen Ooms"
+
+#. Author URI of the plugin/theme
+msgid "http://jeroenooms.nl"
+msgstr "http://jeroenooms.nl"
