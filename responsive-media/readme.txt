@@ -1,14 +1,14 @@
 === Plugin Name ===
 Contributors: jeroenooms
 Donate link: https://www.paypal.me/JeroenOoms
-Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress
+Tags: responsive, video, media, youtube, vimeo, kickstarter, soundcloud, slideshare, ted, speakerdeck, videopress, wordpress, flickr, vine, oembed, image, photo
 Requires at least: 4.0.0
 Tested up to: 4.4.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Wordpress plugin for responsive embedded media (oEmbed) like Youtube, Vimeo, Soundcloud & Slideshare.
+Wordpress plugin for responsive embedded media (oEmbed) like Youtube, Vimeo, Flickr, Kickstarter, Slideshare, Soundcloud, Speakerdeck, Ted, Vine.
 
 == Description ==
 
@@ -23,23 +23,26 @@ Read more information about supported platforms and alternative implementations 
 
 = Supported platforms with this Responsive Media plugin =
 
-After installing this plugin, the following media will be responsive automaticly even on earlier published posts and pages.
+After installing this plugin, the following media will be responsive automaticly even on earlier published posts and pages. The version numbers show since when these oEmbedded media are supported by Wordpress.
 
-* Flickr
-* Kickstarter
-* Slideshare
-* Soundcloud
-* Speakerdeck
-* Ted
-* Videopress
-* Vimeo
-* Vine
-* Youtube
-* Wordpress.tv
+* Flickr (2.9.0) [1]
+* Kickstarter (4.2.0)
+* Slideshare (3.5.0)
+* Soundcloud (3.5.0)
+* Speakerdeck (4.4.0)
+* TED (4.0.0)
+* Videopress (4.4.0)
+* Vimeo (2.9.0)
+* Vine (4.1.0)
+* Youtube (2.9.0) [2]
+* Wordpress.tv (2.9.0)
 
-Responsive without plugin:
+Responsive support without plugin:
 
-* Meetup
+* Meetup (3.9.0)
+
+[1] Flic.kr domain since 3.6.0
+[2] Youtu.be domain since 3.0.0, Youtube playlists since 4.0.0
 
 
 == Installation ==
@@ -49,6 +52,10 @@ Responsive without plugin:
 
 
 == Changelog ==
+
+= 1.1.0 =
+* Add settings to activate or disable specific media
+* Update documentation
 
 = 1.0.0 =
 * Initial version
